@@ -71,7 +71,8 @@ const std::map<std::string, std::string> FlexCounter::m_plugIn2CounterType = {
     {TUNNEL_PLUGIN_FIELD, COUNTER_TYPE_TUNNEL},
     {FLOW_COUNTER_PLUGIN_FIELD, COUNTER_TYPE_FLOW},
     {WRED_QUEUE_PLUGIN_FIELD, COUNTER_TYPE_WRED_ECN_QUEUE},
-    {WRED_PORT_PLUGIN_FIELD, COUNTER_TYPE_WRED_ECN_PORT}};
+    {WRED_PORT_PLUGIN_FIELD, COUNTER_TYPE_WRED_ECN_PORT},
+    {POLICER_COUNTER_PLUGIN_FIELD, COUNTER_TYPE_POLICER}};
 
 const std::map<std::tuple<sai_object_type_t, std::string>, std::string> FlexCounter::m_objectTypeField2CounterType = {
     {{SAI_OBJECT_TYPE_PORT, PORT_COUNTER_ID_LIST}, COUNTER_TYPE_PORT},
